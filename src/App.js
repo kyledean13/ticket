@@ -123,7 +123,7 @@ class App extends React.Component {
                         zIndex: "1",
                         width: "331px",
                     }}
-                    src="https://im3.ezgif.com/tmp/ezgif-3-60c188398b.gif"
+                    src="https://i.ibb.co/TBYF4wL/ezgif-3-60c188398b.gif"
                 ></img>
                 <img
                     onClick={() => {
