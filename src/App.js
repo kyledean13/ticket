@@ -14,17 +14,31 @@ class App extends React.Component {
             section: "110",
             row: "F",
             seat: "2",
-            render: false,
+            render: true,
         };
     }
 
     renderTicket() {
+        console.log(moment().add(10, "days").format("h:mm"));
         return (
             <div>
                 <div
                     style={{
                         position: "absolute",
-                        top: "140px",
+                        top: "12px",
+                        left: "19.5px",
+                        zIndex: "3",
+                        color: "white",
+                        fontSize: "13px",
+                        fontWeight: "550",
+                    }}
+                >
+                    {moment().format("h:mm")}
+                </div>
+                <div
+                    style={{
+                        position: "absolute",
+                        top: "93px",
                         left: "272px",
                         zIndex: "3",
                         color: "white",
@@ -38,7 +52,7 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "148px",
+                        top: "100px",
                         left: "220px",
                         zIndex: "3",
                         color: "white",
@@ -51,7 +65,7 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "280px",
+                        top: "232.5px",
                         left: "25px",
                         zIndex: "3",
                         color: "white",
@@ -64,7 +78,7 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "318px",
+                        top: "270.5px",
                         left: "25px",
                         zIndex: "3",
                         color: "white",
@@ -77,7 +91,7 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "318px",
+                        top: "270.5px",
                         left: "163.5px",
                         zIndex: "3",
                         color: "white",
@@ -90,8 +104,8 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "318px",
-                        left: "285px",
+                        top: "270.5px",
+                        left: "286px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
@@ -105,11 +119,22 @@ class App extends React.Component {
                         this.setState({ render: false });
                     }}
                     style={{
-                        position: "relative",
+                        position: "absolute",
                         zIndex: "1",
                         width: "331px",
                     }}
-                    src="https://i.ibb.co/2538h74/ticket2.png"
+                    src="https://im3.ezgif.com/tmp/ezgif-3-60c188398b.gif"
+                ></img>
+                <img
+                    onClick={() => {
+                        this.setState({ render: false });
+                    }}
+                    style={{
+                        position: "absolute",
+                        zIndex: "1",
+                        width: "331px",
+                    }}
+                    src="https://i.ibb.co/9TvSFZC/tix2.png"
                 ></img>
             </div>
         );
