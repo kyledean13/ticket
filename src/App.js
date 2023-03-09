@@ -1,18 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
+import moment from "moment";
 
 class App extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            time: "",
-            date: "",
-            opps: "",
-            section: "",
-            row: "",
-            seat: "",
+            time: "7:00 PM",
+            date: "Mar 8, 2023",
+            opps: "Golden Knights",
+            section: "110",
+            row: "F",
+            seat: "2",
             render: false,
         };
     }
@@ -23,12 +24,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "109px",
-                        left: "270px",
+                        top: "140px",
+                        left: "272px",
                         zIndex: "3",
                         color: "white",
-                        fontSize: "10px",
-                        fontWeight: "300",
+                        fontSize: "9px",
+                        fontWeight: "450",
                     }}
                 >
                     {this.state.time}
@@ -37,12 +38,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "119px",
-                        left: "215px",
+                        top: "148px",
+                        left: "220px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "300",
+                        fontWeight: "400",
                     }}
                 >
                     {this.state.date}
@@ -50,12 +51,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "251px",
+                        top: "280px",
                         left: "25px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "300",
+                        fontWeight: "400",
                     }}
                 >
                     {"Lightning vs " + this.state.opps}
@@ -63,12 +64,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "289.5px",
+                        top: "318px",
                         left: "25px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "300",
+                        fontWeight: "400",
                     }}
                 >
                     {this.state.section}
@@ -76,12 +77,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "289.5px",
+                        top: "318px",
                         left: "163.5px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "300",
+                        fontWeight: "400",
                     }}
                 >
                     {this.state.row}
@@ -89,12 +90,12 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "289.5px",
+                        top: "318px",
                         left: "285px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "300",
+                        fontWeight: "400",
                     }}
                 >
                     {this.state.seat}
@@ -108,7 +109,7 @@ class App extends React.Component {
                         zIndex: "1",
                         width: "331px",
                     }}
-                    src="https://i.ibb.co/YyqqrbT/ticket.png"
+                    src="https://i.ibb.co/2538h74/ticket2.png"
                 ></img>
             </div>
         );
