@@ -38,7 +38,7 @@ class App extends React.Component {
                     style={{
                         position: "absolute",
                         top: "93px",
-                        left: "221px",
+                        left: "201px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "9px",
@@ -52,7 +52,7 @@ class App extends React.Component {
                     style={{
                         position: "absolute",
                         top: "101px",
-                        left: "220px",
+                        left: "200px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
