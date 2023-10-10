@@ -8,9 +8,9 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            time: "7:00 PM",
-            date: "Mar 8, 2023",
-            opps: "Golden Knights",
+            time: "5:30 PM",
+            date: "Oct 10, 2023",
+            opps: "Predators",
             section: "110",
             row: "F",
             seat: "2",
@@ -19,7 +19,6 @@ class App extends React.Component {
     }
 
     renderTicket() {
-        console.log(moment().add(10, "days").format("h:mm"));
         return (
             <div>
                 <div
@@ -39,7 +38,7 @@ class App extends React.Component {
                     style={{
                         position: "absolute",
                         top: "93px",
-                        left: "272px",
+                        left: "221px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "9px",
@@ -52,7 +51,7 @@ class App extends React.Component {
                 <div
                     style={{
                         position: "absolute",
-                        top: "100px",
+                        top: "101px",
                         left: "220px",
                         zIndex: "3",
                         color: "white",
@@ -92,7 +91,7 @@ class App extends React.Component {
                     style={{
                         position: "absolute",
                         top: "270.5px",
-                        left: "163.5px",
+                        left: "164px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
@@ -105,7 +104,7 @@ class App extends React.Component {
                     style={{
                         position: "absolute",
                         top: "270.5px",
-                        left: "286px",
+                        left: "287px",
                         zIndex: "3",
                         color: "white",
                         fontSize: "16px",
